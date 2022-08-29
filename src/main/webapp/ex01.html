@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculadora básica</title>
+</head>
+<body>
+
+<!-- ENQUANTO NO JS O VALOR DE UM INPUT É CAPTURADO POR MEIO DE UM ID, POR EXEMPLO, EM JAVA UTILIZA-SE O GETPARAMETER
+E NA HTML É UTILIZADA A PROPRIEDADE NAME (QUE SERIA O "ID" UTILIZADO PELO JS).
+
+  -->
+
+
+<form action="ex01Calc.jsp" method="post">
+<fieldset>
+<legend> Dados para calcular </legend>
+<br>
+
+<label for="n1">Valor 1:</label> <input type="number" name="n1">
+<br><br>
+
+<label for="n2">Valor 2:</label> <input type="number" name="n2">
+<br><br>
+
+<fieldset>
+<legend>Operações</legend>
+
+<input type="radio" name="operacao" value="adicao"> <label for="adicao">Adição</label>
+<input type="radio" name="operacao" value="subtracao"> <label for="subtracao">Subtração</label>
+<input type="radio" name="operacao" value="multiplicacao"> <label for="multiplicacao">Multiplicação</label>
+<input type="radio" name="operacao" value="divisao"> <label for="divisao">Divisão</label>
+
+</fieldset>
+<br>
+
+<input type="submit" value="Calcular"> 
+
+</fieldset>
+</form>
+
+
+
+</body>
+</html>

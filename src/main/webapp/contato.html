@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro de produto</title>
+
+</head>
+<body>
+
+<!-- ENQUANTO NO JS O VALOR DE UM INPUT É CAPTURADO POR MEIO DE UM ID, POR EXEMPLO, EM JAVA UTILIZA-SE O GETPARAMETER
+E NA HTML É UTILIZADA A PROPRIEDADE NAME (QUE SERIA O "ID" UTILIZADO PELO JS).
+
+  -->
+
+<h1>Cadastro de Produto</h1>
+
+
+<form action="relatorio.jsp" method="post">
+<fieldset>
+<legend> Dados do produto</legend>
+<br>
+
+<label for="descricao">Descrição:</label> <input type="text" name="descricao" id="nome">
+<br><br>
+
+<label for="valor">Valor:</label><input type="text" name="valor" id="idade">
+<br><br>
+
+<label for="estoque">Estoque:</label> <input type="number" name="estoque" id="peso">
+<br><br>
+
+<span>Tipo:</span>
+<input type="radio" name="tipo" value="Pereciveis"> <label for="Pereciveis">Perecíveis</label>
+<input type="radio" name="tipo" value="naoPereciveis"> <label for="naoPereciveis">Não Perecíveis</label>
+<br><br>
+
+<input type="submit" value="Cadastrar Produto"> 
+
+</fieldset>
+</form>
+
+</body>
+</html>
